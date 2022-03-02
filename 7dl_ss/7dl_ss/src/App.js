@@ -1,0 +1,30 @@
+import './App.css';
+import ChangeDirectory from "./components/ChangeDirectory";
+import Account from "./components/Account";
+import UploadSave from "./components/UploadSave";
+import DownloadSave from "./components/DownloadSave";
+import SaveList from "./components/SaveList";
+import Status from "./components/Status";
+
+function App() {
+  return (
+    <div className="App">
+      <div className='app-top'>
+            <ChangeDirectory/>
+            <Account/>
+      </div>
+      <div className='app-middle'>
+            <UploadSave/>
+          <DownloadSave>
+              <Status/>
+          </DownloadSave>
+      </div>
+      <div className='app-down'>
+            <SaveList/>
+            <SaveList/>
+      </div>
+    </div>
+  );
+}
+
+export default App;

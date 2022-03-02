@@ -20,8 +20,8 @@ function App() {
           </DownloadSave>
       </div>
       <div className='app-down'>
-            <SaveList/>
-            <SaveList/>
+            <SaveList title='Локальные сохранения:'/>
+            <SaveList title='Облачные сохранения:'/>
       </div>
     </div>
   );

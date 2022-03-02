@@ -35,6 +35,38 @@
     justify-content: center;
     align-items: center;
 }
+.app-top-account
+{
+    height: inherit;
+    width: 338px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.app-top-account_image
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #b5b5b5;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.app-top-account_text
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.app-top-account_text_triangle
+{
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #b5b5b5;
+    margin: 0 5px;
+}
 
 .app-middle
 {
@@ -145,28 +177,75 @@
     justify-content: space-between;
     align-items: center;
 }
+.app-down-saveList
+{
+    height: 375px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.app-down-saveList-title
+{
+    width: inherit;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.app-down-saveList-block
+{
+    width: inherit;
+    height: 320px;
+    border: 1px solid #b5b5b5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.app-down-saveList-block::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+    background-color: transparent;
+}
+.app-down-saveList-block::-webkit-scrollbar-thumb {
+    background: #b5b5b5;
+    border-radius: 5px;
+}
+.app-down-saveList-block_header
+{
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #DEDFDF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:20px;
+}
 
 .wtext12px
 {
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Roboto', sans-serif;
 }
 .wtext16px
 {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
 .gtext12px
 {
     color: #b5b5b5;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Roboto', sans-serif;
 }
 .gtext16px
 {
     color: #b5b5b5;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }

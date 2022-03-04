@@ -34,6 +34,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
+}
+.app-top-changeDirectory_button div:hover
+{
+    transition: 0.2s;
+    background-color: #4CCD33;
 }
 .app-top-account
 {
@@ -52,11 +58,20 @@
     margin-left: 10px;
     overflow: hidden;
 }
+.app-top-account_image img
+{
+    width: 100%;
+    height: 100%;
+}
 .app-top-account_text
 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+}
+.app-top-account_text button
+{
+    display: none;
 }
 .app-top-account_text_triangle
 {
@@ -128,6 +143,7 @@
     border: 0;
     border-radius: 5px;
     background-color: #4BC631;
+    position: relative;
 }
 .button-big
 {
@@ -136,6 +152,13 @@
     border: 0;
     border-radius: 5px;
     background-color: #4BC631;
+    position: relative;
+}
+.button-big:hover,
+.button-small:hover
+{
+    transition: 0.2s;
+    background-color: #4CCD33;
 }
 .rot-loader
 {
@@ -248,4 +271,10 @@
     color: #b5b5b5;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+}
+.hovered
+{
+    color: #8c8c8c;
+    border-top-color: #9c9c9c;
+    transition: 0.2s;
 }

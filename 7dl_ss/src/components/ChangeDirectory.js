@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+const FileManager = require('../ProgramOptions/FileManager');
 
 class ChangeDirectory extends Component
 {
@@ -18,12 +19,14 @@ class ChangeDirectory extends Component
         let s = this.state;
         s.dir = this.dirChange.current.value;
         this.setState(s);
+        FileManager.SaveNewPath(this.dirChange.current.value);
     }
 
     render()
     {
         return (
-            <div className="app-top-changeDirectory">
+            <label
+                className="app-top-changeDirectory">
                 <nobr className='gtext12px app-top-changeDirectory_title'> Игра: {this.state.dir}</nobr>
                 <label className='app-top-changeDirectory_button'>
                     <div>
@@ -31,7 +34,7 @@ class ChangeDirectory extends Component
                     </div>
                     <input type="file" webkitdirectory="" directory="" ref={this.dirChange} onChange={() => {this.OnDirChange()}}/>
                 </label>
-            </div>
+            </label>
         );
     }
 }

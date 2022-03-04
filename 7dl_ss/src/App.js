@@ -5,9 +5,11 @@ import UploadSave from "./components/UploadSave";
 import DownloadSave from "./components/DownloadSave";
 import SaveList from "./components/SaveList";
 import Status from "./components/Status";
+import FileManager from "./ProgramOptions/FileManager";
 
 function App() {
-  return (
+
+    return (
     <div className="App">
       <div className='app-top'>
             <ChangeDirectory/>
@@ -24,7 +26,7 @@ function App() {
             <SaveList title='Облачные сохранения:'/>
       </div>
     </div>
-  );
+      );
 }
 
 export default App;

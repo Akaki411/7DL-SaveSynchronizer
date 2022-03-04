@@ -7,7 +7,7 @@ const DownloadSave = (props) => {
                 {props.children}
             </div>
             <div className='app-middle-block-cell'>
-                <button className="button-big">
+                <button className="button-big" title="Синхронизировать сохранения с облаком">
                     <nobr className='wtext16px'>Загрузка</nobr>
                 </button>
             </div>

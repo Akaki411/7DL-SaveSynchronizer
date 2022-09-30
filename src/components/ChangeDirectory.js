@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-const FileManager = require('../ProgramOptions/FileManager');
 
 class ChangeDirectory extends Component
 {
@@ -10,31 +9,40 @@ class ChangeDirectory extends Component
         this.dirChange = React.createRef();
 
         this.state ={
-            dir: "C:\\Program Files\\7sd_conv-1.1.7-pc"
+            dir: "Загрузка..."
         };
+    }
+
+    componentDidMount()
+    {
+        window.api.GetPath().then((data) => {
+            this.setState({dir: data})
+            this.props.OnPathLoad()
+        })
     }
 
     OnDirChange()
     {
         let s = this.state;
-        s.dir = this.dirChange.current.value;
+        s.dir = this.dirChange.current.files[0].path;
         this.setState(s);
-        FileManager.SaveNewPath(this.dirChange.current.value);
+        window.api.SetPath(s.dir)
+        this.props.OnPathLoad()
     }
 
     render()
     {
         return (
-            <label
+            <div
                 className="app-top-changeDirectory">
                 <nobr className='gtext12px app-top-changeDirectory_title'> Игра: {this.state.dir}</nobr>
                 <label className='app-top-changeDirectory_button'>
                     <div>
                         <p className='wtext12px'>Обзор</p>
                     </div>
-                    <input type="file" webkitdirectory="" directory="" ref={this.dirChange} onChange={() => {this.OnDirChange()}}/>
+                    <input type="file" ref={this.dirChange} onChange={() => {this.OnDirChange()}} />
                 </label>
-            </label>
+            </div>
         );
     }
 }

@@ -1,3 +1,45 @@
+*
+{
+    user-select: none;
+}
+#root
+{
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+html, body
+{
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    height: 500px;
+}
+.app-header
+{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-app-region: drag
+}
+.app-header_button
+{
+    width: 30px;
+    height: inherit;
+    color: #AAAFB2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-app-region: no-drag;
+    transition: 0.4s;
+}
+.app-header_button:hover
+{
+    background-color: #eee;
+    transition: 0.4s;
+}
 .app-top
 {
     width: calc(100% - 72px);
@@ -43,6 +85,7 @@
 }
 .app-top-account
 {
+    position: relative;
     height: inherit;
     width: 338px;
     display: flex;
@@ -81,6 +124,102 @@
     border-right: 4px solid transparent;
     border-top: 8px solid #b5b5b5;
     margin: 0 5px;
+}
+.app-top-account-accountInfoBlock
+{
+    position: absolute;
+    bottom: -90px;
+    right: calc(50% - 160px);
+    padding: 8px 10px;
+    width: 200px;
+    min-height: 20px;
+    background-color: #ffffffaa;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px gray;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-top-account-accountInfoBlock-menuText
+{
+    font-size: 10px;
+    color: #777777;
+    margin: 0;
+}
+.app-top-account-accountInfoBlock-authPlace
+{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#authBlockGear svg
+{
+    width: 20px;
+    height: 20px;
+}
+.app-top-account-accountInfoBlock-authPlace-settings
+{
+    background-color: transparent;
+    border: 0;
+}
+.app-top-account-accountInfoBlock-authPlace-settings:hover svg
+{
+    fill: #8c8c8c;
+}
+.app-top-account-accountInfoBlock-authPlace-authButton
+{
+    position: relative;
+    border: 0;
+    border-radius: 7px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 35px;
+    transition: .2s;
+}
+.app-top-account-accountInfoBlock-authPlace-authButton:hover
+{
+    background-color: #e0e0e0;
+    transition: .2s;
+}
+.app-top-account-accountInfoBlock-authPlace-authButton svg
+{
+    position: absolute;
+    left: 7px;
+    top: 5px;
+}
+.app-top-account-accountInfoBlock-menuButton
+{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-top-account-accountInfoBlock-menuButton button
+{
+    height: 12px;
+    background-color: transparent;
+    border: 0;
+    color: #8c8c8c;
+}
+.app-top-account-accountInfoBlock-menuButton button:after
+{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+.app-top-account-accountInfoBlock-menuButton button:hover
+{
+    color: #7c7c7c;
 }
 
 .app-middle
@@ -224,16 +363,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    overflow-y: scroll;
-}
-.app-down-saveList-block::-webkit-scrollbar {
-    width: 4px;
-    height: 8px;
-    background-color: transparent;
-}
-.app-down-saveList-block::-webkit-scrollbar-thumb {
-    background: #b5b5b5;
-    border-radius: 5px;
 }
 .app-down-saveList-block_header
 {
@@ -246,6 +375,66 @@
     align-items: center;
     justify-content: space-between;
     margin-left:20px;
+}
+.app-down-saveList-block_body
+{
+    width: 100%;
+    height: calc(100% - 20px);
+    margin-top: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.app-down-saveList-block_body::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+    background-color: transparent;
+}
+.app-down-saveList-block_body::-webkit-scrollbar-thumb {
+    background: #b5b5b5;
+    border-radius: 5px;
+}
+.app-down-saveList-cell
+{
+    width: 100%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    margin-top: 8px;
+    color: #aaafb2;
+    font-size: 10px;
+}
+.app-down-saveList-cell svg
+{
+    height: 20px;
+}
+.app-down-saveList-cell_info
+{
+    width: calc(100% - 5px);
+    margin-left: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.app-down-saveList-cell_info-name
+{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.app-down-saveList-cell_info-date
+{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    margin-left: 10px;
 }
 
 .wtext12px

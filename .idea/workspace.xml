@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57eca080-d3a5-44cc-870e-9458a81a8f6f" name="Changes" comment="" />
+    <list default="true" id="57eca080-d3a5-44cc-870e-9458a81a8f6f" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/electron/fileManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electron/preload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electron/settings/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electron/syncManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Save.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/electron/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/ProgramOptions/FileManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/ProgramOptions/parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/components/Account.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/components/ChangeDirectory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/components/DownloadSave.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/components/SaveList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/components/Status.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/components/UploadSave.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/images/Screenshot_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/images/Screenshot_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/images/yandex.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7dl_ss/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +49,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -18,22 +58,39 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="25qa8gCAQO1L8agPoirsWwqUhr3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/electron/main.js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\7DL-SaveSynchronizer\7dl_ss\src\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\7DL-SaveSynchronizer\7dl_ss\7dl_ss\src\ProgramOptions" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="CompoundRunConfigurationType">
+      <toRun name="main.js" type="NodeJSConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="main.js" type="NodeJSConfigurationType" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,10 +104,44 @@
       <workItem from="1646326074630" duration="1944000" />
       <workItem from="1646340454759" duration="1439000" />
       <workItem from="1646377285376" duration="6968000" />
+      <workItem from="1647021035852" duration="7090000" />
+      <workItem from="1647070483485" duration="3098000" />
+      <workItem from="1647228707477" duration="3964000" />
+      <workItem from="1647780280516" duration="281000" />
+      <workItem from="1655396601573" duration="94000" />
+      <workItem from="1655665285507" duration="642000" />
+      <workItem from="1661982885708" duration="1419000" />
+      <workItem from="1662035843401" duration="595000" />
+      <workItem from="1662038852575" duration="1508000" />
+      <workItem from="1662490417344" duration="4797000" />
+      <workItem from="1662550408844" duration="303000" />
+      <workItem from="1662572930268" duration="633000" />
+      <workItem from="1662741581654" duration="595000" />
+      <workItem from="1663700343567" duration="2017000" />
+      <workItem from="1663966814518" duration="1774000" />
+      <workItem from="1664132227366" duration="3373000" />
+      <workItem from="1664310887911" duration="2633000" />
+      <workItem from="1664348044921" duration="11126000" />
+      <workItem from="1664384324832" duration="13772000" />
+      <workItem from="1664428299838" duration="6552000" />
+      <workItem from="1664466295682" duration="1233000" />
+      <workItem from="1664552440294" duration="594000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
